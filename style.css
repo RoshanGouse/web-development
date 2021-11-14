@@ -1,0 +1,108 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+body{font-family: 'Poppins', sans-serif;}
+.navbar{display:flex;
+        padding:20px;
+        align-items: center;}
+nav{flex:1;
+    text-align: right;}
+nav ul{display:inline-block;
+        margin-right:20px;
+        list-style-type: none;}
+        nav ul li{display: inline-block;
+            margin-right:20px;}
+        nav ul li a:hover{color:red;}
+ a{text-decoration: none;color:#555;}
+ p{color:#555;}
+ .container{max-width: 1300px;
+            margin:auto;
+        padding-left: 25px;
+    padding-right: 25px;}
+.row{display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;}
+.col-2{flex-basis: 50%;
+        min-width: 300px;}
+.col-2 img{max-width: 100%;
+            padding:50px 0;}
+.col-2 h1{font-size:50px;line-height:60px;margin:25px 0;}
+.btn{
+    display: inline-block;
+    color:#fff;
+    background:#ff523b;
+    border-radius:30px;
+    padding:8px 30px;
+    margin:30px 0;
+    transition:background 0.5s; 
+}
+.btn:hover{background:#563434;}
+.header{
+    background-image:radial-gradient(#fff,#ffd6d6);
+}
+.header .row{margin-top: 70px;}
+
+
+.categories{margin:70px 0;}
+.col-3{flex-basis: 30%;
+        min-width:250px;
+    margin-bottom: 30px;}
+.col-3 img{width:100%;}
+
+.small-container{max-width:1080px;
+                margin:auto;
+                padding:0 25px;}
+.col-4{
+    flex-basis:25%;
+    min-width:200px;
+    padding:20px;
+    margin-bottom:50px;
+    transition:transform 0.5s;
+}
+.col-4 img{width: 100%;}
+.title{
+    text-align: center;
+    margin:0 auto 80px;
+    color:#555;
+    position:relative;
+    line-height: 60px;
+}
+.title::after{
+    content:'';
+    width:80px;
+    height:5px;
+    background:#ff523b;
+    position: absolute;
+    border-radius: 5px;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+.rating .fas{
+    color:#ff523b;
+}
+.col-4:hover{transform:translateY(-5px);}
+.social-icons{
+        width: 50px;
+        position: fixed;
+        top:50%;
+        left:0;
+        transform: translateY(-50%);
+        z-index: 1;
+}
+.social-icons img{width:20px;
+                display:block;
+               margin:0 auto 20px;
+                cursor: pointer;}
+.chat{width:50px;
+      position:fixed;
+      bottom:0;
+      right:0;
+    }
+.chat .fas{color:#ff523b;
+           display:block;
+           font-size:xx-large;
+           margin:20px 0;
+           cursor:pointer;
+           transition: transform 1s;
+           }
+.chat .fas:hover{color:rgb(9, 216, 9);transform:translateY(-5px); }
